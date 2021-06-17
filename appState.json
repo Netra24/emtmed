@@ -1,0 +1,107 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "dd7f12dc-575e-4699-8046-378274edd360": {
+        "id": "dd7f12dc-575e-4699-8046-378274edd360",
+        "parent": null,
+        "name": "EmtMed.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "EmtMed.py",
+        "cursor": {
+          "lineNumber": 73,
+          "column": 6
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "EmtMed"
+        },
+        "triggers": [
+          {
+            "resourceName": "httpApiguploadFile",
+            "config": {
+              "defaultRoute": false,
+              "method": "POST",
+              "route": "/upload"
+            }
+          }
+        ],
+        "lastUpdated": 1623933385075
+      }
+    },
+    "openFiles": [
+      "dd7f12dc-575e-4699-8046-378274edd360"
+    ],
+    "currentFileId": "dd7f12dc-575e-4699-8046-378274edd360",
+    "resources": {
+      "httpApiguploadFile": {
+        "name": "httpApiguploadFile",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 2,
+          "mode": 0,
+          "apiName": "uploadFile",
+          "stageName": "audio",
+          "corsConfig": {
+            "allowedHeaders": [
+              "*"
+            ],
+            "allowedMethods": [
+              "*"
+            ],
+            "allowedOrigins": [
+              "*"
+            ],
+            "exposedHeaders": [
+              "*"
+            ],
+            "maxAge": 0,
+            "allowCredentials": false
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.8.0",
+    "projectName": "EmtMed",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "ap-southeast-2",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {}
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "emtmed",
+      "url": "https://github.com/Netra24/emtmed"
+    }
+  }
+}
